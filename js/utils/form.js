@@ -9,12 +9,6 @@ let isValid = false;
 
 const validateForm = () => {
   isValid = form.checkValidity();
-  // if (!isValid) {
-  //   message.textContent = "Please fill out all fields";
-  //   messageContainer.style.display = "flex";
-  //   message.style.color = "red";
-  //   messageContainer.style.borderColor = "red";
-  // }
 
   if (isValid) {
     message.textContent = "Successfully sent!";

@@ -994,7 +994,7 @@ input[type=radio].visually-hidden {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 40px;
-  background-color: #1C1E53;
+  background-color: #1c1e53;
 }
 
 .footer-finsweet,
@@ -1026,7 +1026,7 @@ input[type=radio].visually-hidden {
 
 .socials-network a:hover,
 .socials-network a:active {
-  fill: #FCD980;
+  fill: #fcd980;
 }
 
 .contact-info {
@@ -1038,7 +1038,7 @@ input[type=radio].visually-hidden {
   max-width: 516px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #FCD980;
+  background-color: #fcd980;
 }
 
 .email-info,
@@ -1120,7 +1120,7 @@ input[type=radio].visually-hidden {
 
 .who-we-are {
   margin-top: 40px;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .who-we-are__label {
@@ -1877,7 +1877,7 @@ input:checked + .keyword-button {
   text-align: center;
   margin-top: 10px;
   font-size: 12px;
-  color: #2405F2;
+  color: #2405f2;
 }
 
 .page-read__blog {
@@ -2551,6 +2551,8 @@ input:checked + .keyword-button {
 
   .our-portfolio {
     padding: 80px 20px 60px 20px;
+    -webkit-box-shadow: 3px 12px 17px 5px rgba(247, 245, 249, 0.98);
+    box-shadow: 3px 12px 17px 5px rgba(247, 245, 249, 0.98);
   }
 
   .our-portfolio__text {
@@ -2612,7 +2614,7 @@ input:checked + .keyword-button {
     padding-right: 30px;
   }
 
-  .blog-title {
+  .blog- .blog-title {
     width: 60%;
   }
 
@@ -2644,11 +2646,15 @@ input:checked + .keyword-button {
 @media (min-width: 1600px) {
   body {
     max-width: 1600px;
+    background-color: #1c1e53;
   }
 
   main {
     max-width: 1600px;
+    background-color: white;
     margin: 0 auto;
+    -webkit-box-shadow: 3px 12px 17px 5px rgba(247, 245, 249, 0.98);
+    box-shadow: 3px 12px 17px 5px rgba(247, 245, 249, 0.98);
   }
 
   h1 {
@@ -2684,6 +2690,8 @@ input:checked + .keyword-button {
     padding-left: 160px;
     padding-right: 160px;
     max-width: none;
+    -webkit-box-shadow: 3px 12px 17px 5px rgba(247, 245, 249, 0.98);
+    box-shadow: 3px 12px 17px 5px rgba(247, 245, 249, 0.98);
   }
 
   .navbar {
@@ -3139,7 +3147,7 @@ input:checked + .keyword-button {
   }
 
   .footer-links .site-list__item a {
-    color: #282938;
+    color: white;
   }
 
   .footer-links .site-list__item a:hover {
@@ -3151,7 +3159,11 @@ input:checked + .keyword-button {
     top: 40px;
     left: 0;
     font-size: 16px;
-    color: #282938;
+    color: white;
+  }
+
+  .about-us__page .page-header__wrapper {
+    padding-bottom: 128px;
   }
 
   .page-header__title-wrapper {
@@ -3163,7 +3175,7 @@ input:checked + .keyword-button {
   }
 
   .who-we-are {
-    margin-top: 128px;
+    margin-top: 0;
     margin-left: 160px;
     margin-right: 160px;
   }
@@ -3544,6 +3556,9 @@ input:checked + .keyword-button {
     padding-top: 160px;
     padding-left: 160px;
     padding-right: 160px;
+    background-color: white;
+    -webkit-box-shadow: 3px 12px 17px 5px rgba(247, 245, 249, 0.98);
+    box-shadow: 3px 12px 17px 5px rgba(247, 245, 249, 0.98);
   }
 
   .blog-title {

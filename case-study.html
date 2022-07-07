@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
@@ -92,12 +93,15 @@
 
     <main class="page__case-study">
       <section class="case-study">
-        <div class="case-study__wrapper">
+        <div class="case-study__wrapper" data-aos="zoom=in">
           <div class="work-cards__item keyword-branding">
             <p class="label">Web design and development</p>
             <h2 class="case-stadies__title"></h2>
             <p class="case-stadies__text"></p>
-            <div class="work-cards__background-color study-img">
+            <div
+              class="work-cards__background-color study-img"
+              data-aos="flip-left"
+            >
               <picture>
                 <source
                   type="image/webp"
@@ -109,7 +113,7 @@
                 />
               </picture>
             </div>
-            <ul class="information-list">
+            <ul class="information-list" data-aos="zoom-in">
               <li class="information-item">
                 <p class="label">Client</p>
                 <h6 class="information-title">facebook.com</h6>
@@ -125,129 +129,35 @@
                 </h6>
               </li>
             </ul>
-            <div class="article">
-              <!-- <h3 class="article-title">About the project</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-              <ul class="article-list">
-                <li class="article-item">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </li>
-                <li class="article-item">
-                  Quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea
-                </li>
-                <li class="article-item">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                </li>
-                <li class="article-item">
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                </li>
-              </ul>
-              <div class="case-study__image">
-                <div class="work-card">
-                  <div class="work-cards__background-color">
-                    <picture>
-                      <source
-                        type="image/webp"
-                        srcset="img/images/work-page/team-work.webp"
-                      />
-                      <img
-                        src="img/images/work-page/team-work.jpg"
-                        alt="team work"
-                      />
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <h3 class="article-title">How we do it</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-
-              <ul class="article-list">
-                <li class="article-item">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </li>
-                <li class="article-item">
-                  Quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea
-                </li>
-                <li class="article-item">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                </li>
-                <li class="article-item">
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                </li>
-              </ul> -->
-            </div>
+            <div class="article"></div>
           </div>
         </div>
 
-        <div class="keywords">
-          <div class="keywords-wrapper">
-            <h6 class="keywords-title">Keywords</h6>
-          </div>
-
-          <div class="keyword-filter">
-            <a href="case-study.html?id=caseStudy1" class="keyword-button"
-              >Design</a
-            >
-            <a href="case-study.html?id=caseStudy2" class="keyword-button"
-              >UI/UX</a
-            >
-            <a href="case-study.html?id=${id}" class="keyword-button"
-              >Wireframing</a
-            >
-            <a class="keyword-button keyword-button--active">Branding</a>
-            <a href="case-studies-development.html" class="keyword-button"
-              >Development</a
-            >
-            <a href="case-studies-webflow.html" class="keyword-button"
-              >webflow</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <!-- <section class="case-study">
-        <div class="case-study__wrapper"></div>
-        <div class="keywords">
+        <div class="keywords" data-aos="zoom-in">
           <div class="keywords-wrapper">
             <h6 class="keywords-title">Keywords</h6>
           </div>
 
           <div class="keyword-filter"></div>
         </div>
-      </section> -->
+      </section>
 
       <section class="lets-build">
-        <h2 class="lets-build__title">Let's build something great together</h2>
-        <p class="lets-build__text">
+        <h2 class="lets-build__title" data-aos="zoom-in">
+          Let's build something great together
+        </h2>
+        <p class="lets-build__text" data-aos="fade-right">
           Nullam vitae purus at tortor mattis dapibus. Morbi purus est,
           ultricies nec dolor sit amet, scelerisque cursus purus.
         </p>
-        <div class="lets-build__button">
-          <a class="view-button" href="#">Contact Us</a>
+        <div class="lets-build__button" data-aos="fade-up">
+          <a class="view-button" href="contact-us.html">Contact Us</a>
         </div>
       </section>
     </main>
 
-    <footer class="page-footer animation scroll-item">
-      <div class="footer-content">
+    <footer class="page-footer">
+      <div class="footer-content" data-aos="zoom-in">
         <div class="footer-finsweet__wrapper">
           <div class="footer-finsweet">
             <img class="footer-logo" src="img/svg/logo-icon.svg" alt="logo" />
@@ -324,6 +234,8 @@
         <p class="copyright">Copyright 2022, Finsweet.com</p>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script type="module" src="./js/pages/case_study.min.js"></script>
   </body>
 </html>

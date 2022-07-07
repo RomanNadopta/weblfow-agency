@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
@@ -90,17 +91,17 @@
     </header>
     <main class="page__contact-us">
       <div class="contact">
-        <h2 class="contact-title">Contact Us</h2>
-        <p class="contact-text">
+        <h2 class="contact-title" data-aos="zoom-in">Contact Us</h2>
+        <p class="contact-text" data-aos="fade-right">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore.
         </p>
       </div>
-      <div class="form-container">
+      <div class="form-container" data-aos="fade-up">
         <form id="form">
           <div class="form-group__container">
             <div class="form-group">
-              <label for="name"> Name </label>
+              <label for="name"> Name* </label>
               <input
                 type="text"
                 id="name"
@@ -112,7 +113,7 @@
               />
             </div>
             <div class="form-group">
-              <label for="email">Email</label>
+              <label for="email">Email*</label>
               <input
                 type="email"
                 id="email"
@@ -124,7 +125,7 @@
           </div>
           <div class="form-group__container">
             <div class="form-group">
-              <label for="context">Subject</label>
+              <label for="context">Subject*</label>
               <input
                 type="text"
                 id="context"
@@ -168,8 +169,8 @@
       </div>
     </main>
 
-    <footer class="page-footer read-blog__footer animation scroll-item">
-      <div class="footer-content">
+    <footer class="page-footer read-blog__footer">
+      <div class="footer-content" data-aos="zoom-in">
         <div class="footer-finsweet__wrapper">
           <div class="footer-finsweet">
             <img class="footer-logo" src="img/svg/logo-icon.svg" alt="logo" />
@@ -246,6 +247,7 @@
         <p class="copyright">Copyright 2022, Finsweet.com</p>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script type="module" src="./js/pages/contactUs.min.js"></script>
   </body>

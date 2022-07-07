@@ -1,5 +1,5 @@
 import "../utils/toggleMenu.js";
-
+import "../utils/AOS.js";
 
 import { blogs } from "../utils/blog.js";
 import display from "../utils/displayBlogs.js";
@@ -9,7 +9,6 @@ const mainBlogURL =
   "https://romannadopta.github.io/json-for-weblow-agency/single-mainBlog";
 
 const blogHeader = getElement(".blog-header");
-
 window.addEventListener("DOMContentLoaded", async function () {
   try {
     const response = await fetch(mainBlogURL);
@@ -42,7 +41,10 @@ window.addEventListener("DOMContentLoaded", async function () {
     </p>
     <a class="blog-header__link" href="read-blog.html?id=${id}">Read more</a>`;
     }
-  } catch (error) {}
+  } catch (error) {
+    console.log(error);
+  }
+
   const animation = () => {
     AOS.init({
       delay: 200, // values from 0 to 3000, with step 50ms
@@ -58,4 +60,6 @@ window.addEventListener("DOMContentLoaded", async function () {
 
 });
 
+
 display(blogs, getElement(".our-blog__list"));
+

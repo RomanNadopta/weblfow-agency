@@ -1,4 +1,5 @@
 import "../utils/toggleMenu.js";
+import "../utils/AOS.js";
 
 import linkFilter from "../filter/studyLinkFilter.js";
 import { caseStudyUrl, getElement } from "../utils/utils.js";
@@ -44,15 +45,15 @@ window.addEventListener("DOMContentLoaded", async function () {
       SourceImgDOM.srcset = `${firstImg}.webp`;
       studyImgDOM.src = `${firstImg}.jpg`;
 
-      articleDOM.innerHTML = ` <h3 class="article-title">About the project</h3>
-         <p>
+      articleDOM.innerHTML = ` <h3 class="article-title" data-aos="fade-right">About the project</h3>
+         <p  data-aos="fade-up">
          ${firstArticleDesc}
          </p>
-         <ul class="article-list project-list">
+         <ul class="article-list project-list"  data-aos="fade-up">
          </ul>
       <div class="case-study__image">
       <div class="work-card">
-      <div class="work-cards__background-color">
+      <div class="work-cards__background-color"  data-aos="flip-right">
       <picture>
       <source
       type="image/webp"
@@ -66,12 +67,12 @@ window.addEventListener("DOMContentLoaded", async function () {
       </div>
         </div>
         </div>
-        <h3 class="article-title">How we do it</h3>
-        <p>
+        <h3 class="article-title"  data-aos="fade-right">How we do it</h3>
+        <p  data-aos="fade-up">
         ${secondArticleDesc}
         </p>
         
-        <ul class="article-list do-list">
+        <ul class="article-list do-list"  data-aos="fade-up">
         <li class="article-item">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit
         </li>

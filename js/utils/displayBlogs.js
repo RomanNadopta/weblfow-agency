@@ -2,7 +2,7 @@ const display = (blogs, element) => {
   element.innerHTML = blogs
     .map((blog) => {
       const { id, data, img, title, alt, description } = blog;
-      return `<li class="our-blog__item" data-aos="zoom-in-up">
+      return `<li class="our-blog__item"  data-aos="zoom-in-up">
     <div class="our-blog__image">
       <picture>
         <source type="image/webp" srcset="${img}.webp">

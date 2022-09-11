@@ -1,0 +1,119 @@
+.our-work-portfolio {
+  padding: 40px 20px 0px 20px;
+}
+
+.work-categories__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.categories-button {
+  display: inline-block;
+  margin-right: 10px;
+  padding-bottom: 20px;
+  background-color: transparent;
+  border: none;
+  transition: $transition;
+
+  color: rgb(40, 40, 40);
+
+  cursor: pointer;
+}
+
+.categories-button:hover,
+.categories-button:active,
+input:checked + .keyword-button {
+  color: #2405f2;
+}
+
+.work-cards__item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.work-cards__background-color {
+  padding: 20px;
+}
+
+.work-cards__item:nth-child(1) .work-cards__background-color {
+  background: linear-gradient(131.34deg, #f4ede1 16.74%, #98b1c6 103.17%);
+}
+
+.work-cards__item:nth-child(2) .work-cards__background-color {
+  background: linear-gradient(131.34deg, #ffd3af 16.74%, #4f56ff 103.17%);
+}
+
+.work-cards__item:nth-child(3) .work-cards__background-color {
+  background: linear-gradient(131.34deg, #eebca7 16.74%, #c8c8c8 103.17%);
+}
+
+.work-cards__item:nth-child(4) .work-cards__background-color {
+  background: linear-gradient(131.34deg, #c2e7f2 16.74%, #98a4ff 103.17%);
+}
+
+.work-cards__item:nth-child(5) .work-cards__background-color {
+  background: linear-gradient(131.34deg, #c5bcff 16.74%, #9bf7d5 103.17%);
+}
+
+.work-cards__item:nth-child(6) .work-cards__background-color {
+  background: linear-gradient(131.34deg, #d2d6fd 16.74%, #d6acea 103.17%);
+}
+
+.project__title {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.view-portfolio {
+  margin-top: 20px;
+  color: #282828;
+}
+
+.view-portfolio svg {
+  fill: #282828;
+}
+
+.work-card--hide {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .our-work-portfolio {
+    padding: 80px 30px 0px 30px;
+  }
+
+  .work-cards__item {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .work-cards__background-color {
+    padding: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .our-work-portfolio {
+    padding: 100px 130px 0 160px;
+  }
+
+  .work-cards__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .work-cards__item {
+    width: 47%;
+    margin-right: 30px;
+  }
+
+  .project__title {
+    padding-top: 44px;
+    padding-bottom: 37px;
+  }
+
+  .view-portfolio {
+    margin-top: 37px;
+    font-size: 16px;
+  }
+}

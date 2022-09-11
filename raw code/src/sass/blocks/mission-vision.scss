@@ -1,0 +1,62 @@
+.mission-vision {
+  margin-top: 40px;
+  padding: 40px 20px 20px 20px;
+  background-color: #EEF4FA;
+}
+
+.our-mission p,
+.our-mission h3,
+.our-vision__wrapper,
+.our-vision p,
+.our-vision h3 {
+  padding-top: 20px;
+}
+
+@media(min-width: $tablet-width) {
+  .mission-vision {
+    margin-top: 80px;
+    padding: 80px 30px 30px 30px;
+  }
+
+  .our-mission__wrapper,
+  .our-vision__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .our-vision__wrapper {
+    padding-top: 30px;
+  }
+
+  .our-misson__image,
+  .our-mission,
+  .our-vision__image,
+  .our-vision {
+    width: 48%;
+  }
+
+  .our-misson__image {
+    order: 2;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .mission-vision {
+    margin-top: 126px;
+    padding: 126px 160px 126px 160px;
+  }
+
+  .our-misson__image,
+  .our-vision__image {
+    width: 44%;
+  }
+
+  .our-mission,
+  .our-vision {
+    width: 49%;
+  }
+
+  .our-vision__wrapper {
+    padding-top: 96px;
+  }
+}

@@ -1,0 +1,184 @@
+.footer-content {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  background-color: #1c1e53;
+}
+
+.footer-finsweet,
+.footer__lets-talk {
+  padding-top: 20px;
+}
+
+.footer-slogan,
+.lets-talk__title,
+.lets-talk__text {
+  color: #ffffff;
+}
+
+.footer-slogan,
+.lets-talk__text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  line-height: 24px;
+}
+
+.socials-network {
+  padding-bottom: 20px;
+}
+
+.socials-network a {
+  margin-right: 20px;
+  fill: #ffffff;
+
+  &:hover,
+  &:active {
+    fill: #fcd980;
+  }
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 516px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  background-color: #fcd980;
+}
+
+.email-info,
+.phone-info {
+  padding-left: 30px;
+}
+
+.email-info {
+  padding-bottom: 10px;
+}
+
+.email-text,
+.phone-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.15;
+}
+
+.contact-email,
+.contact-phone {
+  padding-top: 10px;
+
+  font-size: 14px;
+  line-height: 1.15;
+}
+
+.footer-links {
+  position: relative;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.copyright {
+  position: absolute;
+
+  bottom: 10px;
+  right: 20px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.15;
+
+  color: #ffffff;
+}
+
+.footer-links .site-list {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-content {
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .footer-finsweet__wrapper {
+    display: flex;
+    max-width: 810px;
+    margin: 0 auto;
+  }
+
+  .footer-finsweet,
+  .footer__lets-talk {
+    width: 50%;
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-content {
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 0;
+  }
+
+  .footer-finsweet__wrapper {
+    padding-top: 50px;
+    max-width: 1600px;
+  }
+
+  .footer-finsweet,
+  .footer__lets-talk {
+    margin-right: 245px;
+  }
+
+  .footer-slogan,
+  .lets-talk__text {
+    padding-top: 30px;
+    padding-bottom: 0;
+
+    line-height: 28px;
+  }
+
+  .lets-talk__text {
+    padding-bottom: 34px;
+  }
+
+  .contact-info {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: -10px;
+  }
+
+  .footer-links {
+    padding-right: 160px;
+    margin-left: 160px;
+  }
+
+  .footer-links .site-list {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .footer-links .site-list__item a {
+    color: white;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .copyright {
+    width: 300px;
+
+    top: 40px;
+    left: 0;
+
+    font-size: 16px;
+
+    color: white;
+  }
+}

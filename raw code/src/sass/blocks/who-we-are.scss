@@ -1,0 +1,83 @@
+.who-we-are {
+  margin-top: 40px;
+  background-color: #e5e5e5;
+}
+
+.who-we-are__label {
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+.who-we-are__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.who-we-are__title {
+  padding-top: 26px;
+}
+
+.who-we-are__text {
+  padding-top: 26px;
+}
+
+.who-we-are__image {
+  padding-top: 26px;
+  line-height: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .who-we-are {
+    margin-top: 80px;
+  }
+
+  .who-we-are__label {
+    padding-top: 40px;
+    padding-left: 30px;
+  }
+
+  .who-we-are__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .who-we-are__title-container {
+    width: 45%;
+  }
+
+  .who-we-are__image {
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .who-we-are {
+    margin-top: 0;
+    margin-left: 160px;
+    margin-right: 160px;
+  }
+
+  .who-we-are__label {
+    padding-top: 86px;
+    padding-left: 80px;
+  }
+
+  .who-we-are__wrapper {
+    justify-content: start;
+    padding-left: 80px;
+  }
+
+  .who-we-are__title-container {
+    padding-right: 64px;
+  }
+
+  .who-we-are__text {
+    padding-top: 36px;
+  }
+
+  .who-we-are__image {
+    padding-top: 86px;
+  }
+}

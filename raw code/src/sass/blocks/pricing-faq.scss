@@ -1,0 +1,15 @@
+.pricing-faq {
+  padding-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .pricing-faq {
+    padding-bottom: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pricing-faq {
+    padding-bottom: 140px;
+  }
+}

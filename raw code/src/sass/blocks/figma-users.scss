@@ -1,0 +1,19 @@
+.figma-users .benefits-title {
+  padding-top: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .figma-users .benefits-title {
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .figma-users {
+    padding-top: 54px;
+  }
+
+  .figma-users .benefits-title {
+    padding-top: 124px;
+  }
+}

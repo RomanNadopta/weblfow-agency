@@ -1,0 +1,162 @@
+.our-projects {
+  margin: 40px 20px 40px 20px;
+}
+
+.our-projects__title {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.view-more_wrapper {
+  text-align: center;
+}
+
+
+.our-projects .view-link__more,
+.view-link__more .arrow-right {
+  color: #282938;
+  fill: #282938;
+}
+
+.our-projects__image,
+.our-projects__image-item {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  line-height: 0;
+}
+
+.image-title,
+.image-text {
+  color: #ffffff;
+}
+
+.our-project__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+
+  background: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+}
+
+.our-projects__image-item .our-project__content {
+  width: 100%;
+}
+
+.our-project__content-wrapper {
+  position: relative;
+  top: 40%;
+  max-width: 293px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.our-project__content .image-title {
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.our-project__content .image-text {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.view-link__project {
+  font-weight: 500;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.view-link__project,
+.view-link__project .arrow-right {
+  color: #FCD980;
+  fill: #FCD980;
+}
+
+@media (min-width: $tablet-width) {
+  .our-projects {
+    position: relative;
+    margin: 80px 30px 60px 30px;
+  }
+
+  .our-projects__title {
+    text-align: start;
+    padding-bottom: 30px;
+  }
+
+  .view-more_wrapper {
+    position: absolute;
+    text-align: start;
+
+    top: 0;
+    right: 10px;
+  }
+
+  .our-project__image-wrapper {
+    display: flex;
+  }
+
+  .our-projects__image {
+    margin-right: 20px;
+  }
+
+  .our-project__content {
+    width: 46%;
+  }
+
+  .our-project__content-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .our-projects {
+    margin: 144px 160px 144px 160px;
+  }
+
+  .our-projects__title {
+    padding-bottom: 48px;
+  }
+
+  .our-projects .view-link__more {
+    font-size: 16px
+  }
+
+  .view-more_wrapper {
+    top: 16px;
+  }
+
+  .our-projects__image,
+  .our-projects__image-item {
+    margin-top: 26px;
+    max-width: none;
+  }
+
+  .our-projects__image {
+    margin-right: 34px;
+  }
+
+  .our-project__content .image-title {
+    line-height: 36px;
+  }
+
+  .our-project__content-wrapper {
+    max-width: 298px;
+  }
+
+  .our-project__content .image-text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .view-link__project {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,57 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"),
+      url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+@import "fonts";
+@import "mixins";
+@import "variables";
+@import "scaffolding";
+
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/button";
+@import "blocks/how-it-work";
+@import "blocks/our-projects";
+@import "blocks/features";
+@import "blocks/review";
+@import "blocks/faq";
+@import "blocks/contacts";
+@import "blocks/our-blog";
+@import "blocks/page-footer";
+
+@import "blocks/page-header__about-us";
+@import "blocks/who-we-are";
+@import "blocks/process";
+@import "blocks/mission-vision";
+@import "blocks/benefits";
+@import "blocks/our-team";
+
+@import "blocks/price";
+@import "blocks/pricing-faq";
+
+@import "blocks/features-header";
+@import "blocks/figma-users";
+@import "blocks/best-benefits";
+@import "blocks/features-faq";
+
+@import "blocks/page-header__work";
+@import "blocks/our-work-portfolio";
+@import "blocks/lets-build";
+
+@import "blocks/case-study";
+
+@import "blocks/blog-header";
+@import "blocks/blog-page";
+
+@import "blocks/read-blog";
+
+@import "blocks/contact-us";
+
+@import "blocks/privacy-policy";

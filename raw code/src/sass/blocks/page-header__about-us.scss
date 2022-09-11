@@ -1,0 +1,59 @@
+.about-us__page {
+  background-color: #ffffff;
+}
+
+.about-us__page .page-header__title h1,
+.about-us__page .page-header__title p {
+  color: #282938;
+}
+
+.about-us__page .illustration-photo {
+  max-width: none;
+}
+
+.about-us__page .illustration-photo img {
+  height: 100%;
+}
+
+.about-us__page .page-header__title h1 {
+  padding-left: 0;
+}
+
+.about-us__page .page-header__title > p {
+  display: inline;
+  padding-left: 0;
+}
+
+.label {
+  font-size: 14px;
+}
+
+.about-us__label {
+  padding-top: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us__page .page-header__title {
+    width: 84%;
+    padding-top: 80px;
+    padding-right: 30px;
+  }
+
+  .about-us__page .illustration-photo {
+    padding-top: 60px;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us__page .page-header__wrapper {
+    padding-bottom: 128px;
+  }
+  .page-header__title-wrapper {
+    padding-top: 68px;
+  }
+
+  .label {
+    font-size: 18px;
+  }
+}

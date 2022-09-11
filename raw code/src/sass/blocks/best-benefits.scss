@@ -1,0 +1,37 @@
+.best-benefits .mission-vision {
+  margin-top: 0;
+}
+
+.best-benefits .our-vision__wrapper {
+  padding-top: 0;
+}
+
+.best-benefits .our-mission__title,
+.best-benefits .our-vision__title {
+  line-height: 28px;
+}
+
+.best-in-class,
+.support {
+  background-color: white;
+}
+
+.free-revision {
+  background-color: #F4F6FC;
+}
+
+.free-revision__wrapper {
+  padding-top: 0;
+}
+
+.quick-deliver {
+  background-color: #fffcf3;
+}
+
+@media (min-width: $desktop-width) {
+
+  .best-benefits .our-mission__title,
+  .best-benefits .our-vision__title {
+    line-height: 56px;
+  }
+}

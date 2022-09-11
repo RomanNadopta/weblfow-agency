@@ -1,0 +1,15 @@
+.features-faq {
+  padding-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .features-faq {
+    padding-bottom: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features-faq {
+    padding-bottom: 140px;
+  }
+}

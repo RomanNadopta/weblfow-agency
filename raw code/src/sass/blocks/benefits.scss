@@ -1,0 +1,90 @@
+.benefits {
+  padding: 40px 20px 20px 20px;
+}
+
+.benefits-title {
+  text-align: center;
+}
+
+.benefits-item {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #E5E5E5;
+}
+
+.benefits-item__title,
+.benefits-item__text,
+.finsweet-users {
+  padding-top: 20px;
+}
+
+.amount-of-users {
+  float: left;
+  padding-right: 10px;
+}
+
+.finsweet-users__logo img {
+  height: 20px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+@media(min-width: $tablet-width) {
+  .benefits {
+    padding: 80px 30px 30px 30px;
+  }
+
+  .benefits-title {
+    width: 45%;
+    margin: 0 auto;
+    line-height: 36px;
+  }
+
+  .benefits-item {
+    width: 25%;
+    margin-top: 30px;
+  }
+
+  .finsweet-users {
+    padding-top: 30px;
+  }
+
+  .benefits-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .amount-of-users {
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .benefits {
+    padding: 146px 160px 146px 160px;
+  }
+
+  .benefits-title {
+    line-height: 64px;
+  }
+
+  .benefits-item {
+    width: 26%;
+    margin-top: 46px;
+    padding: 36px;
+  }
+
+  .finsweet-users {
+    padding-top: 64px;
+  }
+
+  .finsweet-users__logo img {
+    height: 32px;
+    margin-right: 52px;
+    margin-top: 20px;
+  }
+
+  .amount-of-users {
+    padding-right: 96px;
+  }
+}

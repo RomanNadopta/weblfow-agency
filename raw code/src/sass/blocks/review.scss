@@ -1,0 +1,179 @@
+.review {
+  position: relative;
+  padding: 40px 20px 40px 20px;
+
+  background-color: #FAFBFE;
+}
+
+.review-title {
+
+  padding-bottom: 20px;
+
+  font-weight: 600;
+}
+
+.review-title__wrapper {
+  text-align: center;
+}
+
+.review-text {
+  display: inline-block;
+  padding-left: 24px;
+  padding-bottom: 40px;
+
+  text-align: start;
+
+  line-height: 24px;
+
+  color: #52535f;
+}
+
+.review-client {
+  font-size: 18px;
+  color: #282938;
+}
+
+
+.review__client-profile {
+  padding-top: 20px;
+  position: relative;
+  height: 52px;
+}
+
+.review__client-profile::before {
+  position: absolute;
+  content: "";
+
+  width: 52px;
+  height: 52px;
+
+  background-image: url("../img/images/main-page/woman-in-collared-shirt.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  background-position-y: -10px;
+}
+
+.review__client-profile p {
+  padding-left: 80px;
+}
+
+.review__author-name {
+  padding-top: 8px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.15;
+
+  color: #282938;
+}
+
+.review__author-position {
+  padding-top: 4px;
+  font-weight: 500;
+
+  font-size: 12px;
+  line-height: 1.15;
+}
+
+.review-buttons {
+  position: absolute;
+  top: 92%;
+  right: 0;
+}
+
+.review-button-prev,
+.review-button-next {
+  height: 25px;
+  width: 25px;
+  background: #5239FA;
+  border-radius: 50%;
+
+
+  color: #ffffff;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &.swiper-button-disabled {
+    background-color: #ffffff;
+    color: #B2B2B8;
+    cursor: auto;
+    pointer-events: none;
+  }
+}
+
+.review-button-prev {
+  left: 100%;
+  margin-left: -100px;
+}
+
+.review-button-next {
+  margin-right: 24px;
+}
+
+:root {
+  --swiper-navigation-size: 16px;
+}
+
+
+
+@media (min-width: $tablet-width) {
+  .review {
+    padding: 80px 30px 80px 30px;
+  }
+
+  .review-title__wrapper {
+    text-align: start;
+  }
+
+  .review-text {
+    padding-left: 0;
+  }
+
+  .review-buttons {
+    position: absolute;
+    top: 70%;
+    right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review {
+    display: flex;
+    padding: 144px 160px 144px 160px;
+  }
+
+  .review-title {
+    line-height: 56px;
+  }
+
+  .review-title__wrapper {
+    width: 30%;
+  }
+
+  .review-slider {
+    width: 62%;
+  }
+
+  .review-text {
+    line-height: 28px;
+  }
+
+  .review-client {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .review__client-profile {
+    padding-top: 64px;
+  }
+
+  .review-buttons {
+    top: 68%;
+    right: 132px;
+  }
+
+
+}

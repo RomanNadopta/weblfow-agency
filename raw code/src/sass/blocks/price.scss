@@ -1,0 +1,230 @@
+.price {
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.price-title {
+  text-align: center;
+}
+
+.price-text {
+  padding-top: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.price-card {
+  position: relative;
+  margin-top: 35px;
+  background-color: #f4f6fc;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.price-cost__wrapper,
+.price-service__title,
+.price-service__text,
+.pricing-benefits__list {
+  padding-left: 50px;
+}
+
+.price-cost__wrapper {
+  display: flex;
+}
+
+.price-cost {
+  padding-right: 10px;
+}
+
+.price-service {
+  margin-top: -3px;
+  color: #2405f2;
+}
+
+.pricing-benefits__list {
+  padding-top: 40px;
+}
+
+.price-service__title {
+  padding-top: 20px;
+}
+
+.price-service__text {
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.pricing-benefits__item {
+  display: flex;
+  padding-bottom: 16px;
+}
+
+.pricing-benefits__item .pointer {
+  fill: #97daad;
+}
+
+.pricing-benefits__item .pointer--disabled {
+  fill: #a8aab0;
+}
+
+.pricing-benefits__item .disabled {
+  color: #52535f;
+}
+
+.pricing-benefits__item p {
+  margin-top: -4px;
+  padding-left: 15px;
+
+  font-weight: 400;
+
+  color: #282938;
+}
+
+.pricing-button {
+  padding-top: 34px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.pricing-button a {
+  background-color: #282938;
+  color: #ffffff;
+}
+
+.price-card:hover,
+.price-card:active {
+  position: relative;
+  background-color: #1c1e53;
+}
+
+.price-card:hover {
+  .price-cost,
+  .price-service__title,
+  .price-service__text,
+  .pricing-benefits__item p {
+    color: #ffffff;
+    transition: $transition;
+  }
+
+  .price-service {
+    color: #fcd980;
+  }
+}
+
+.price-card__background {
+  padding-top: 34px;
+  position: relative;
+  z-index: 2;
+}
+
+.price-card:hover .price-card__background,
+.price-card:active .price-card__background {
+  background-color: #292b5d;
+}
+
+.price-card:hover .pricing-button::before,
+.price-card:active .pricing-button::before {
+  position: absolute;
+  content: "";
+  width: 600px;
+  height: 0;
+  bottom: 80px;
+  right: 50%;
+  transform: translate(50%);
+  border-top: 160px solid #292b5d;
+  border-radius: 50%;
+}
+
+.price-card:hover .pricing-button a {
+  color: #282938;
+  background-color: #fcd980;
+}
+
+.pricing-button:hover a {
+  background-color: #fde4a6;
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .pricing-cards {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+  }
+
+  .price-card {
+    position: relative;
+    width: 32%;
+    padding-bottom: 100px;
+  }
+
+  .pricing-button {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price {
+    padding-top: 232px;
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+
+  .price-text {
+    padding-top: 40px;
+    width: 45%;
+  }
+
+  .price-card {
+    margin-top: 70px;
+    padding-bottom: 200px;
+  }
+
+  .price-card__background {
+    padding-top: 78px;
+  }
+
+  .price-cost {
+    padding-right: 14px;
+  }
+
+  .price-service {
+    margin-top: 6px;
+  }
+
+  .price-service__title {
+    padding-top: 46px;
+  }
+
+  .price-service__text {
+    padding-top: 30px;
+    width: 74%;
+  }
+
+  .pricing-benefits__list {
+    padding-top: 92px;
+  }
+
+  .pricing-button {
+    padding-bottom: 60px;
+  }
+
+  .pricing-button .view-button {
+    padding: 20px 50px;
+    font-size: 18px;
+  }
+
+  .price-card:hover .pricing-button::before {
+    bottom: 150px;
+  }
+}

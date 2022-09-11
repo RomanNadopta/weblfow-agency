@@ -1,0 +1,31 @@
+.view-button {
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+
+  font-family: "Manrope";
+  font-size: 14px;
+
+  color: #1b1c2b;
+  background: #fcd980;
+  border-radius: 41px;
+  transition: $transition;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background-color: #fde4a6;
+  }
+}
+
+.view-link {
+  display: inline-block;
+  position: relative;
+
+  font-weight: 500;
+  font-size: 14px;
+
+  color: #ffffff;
+}
+.view-link:hover {
+  opacity: 0.5;
+}

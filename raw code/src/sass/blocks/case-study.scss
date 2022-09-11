@@ -1,0 +1,268 @@
+.article {
+  margin-top: 10px;
+  border-top: 1px solid #bfbfc4;
+}
+
+.article-list {
+  padding-left: 10px;
+}
+
+.article-title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.article-item {
+  padding-top: 20px;
+
+  list-style: disc;
+  font-size: 12px;
+  line-height: 28px;
+
+  color: #52535f;
+}
+
+.keywords {
+  margin-top: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: 1px solid #d4d4d7;
+  border-bottom: 1px solid #d4d4d7;
+}
+
+.keywords-wrapper {
+  float: left;
+}
+
+.keywords-title {
+  padding-right: 10px;
+  padding-top: 4px;
+
+  font-size: 18px;
+
+  color: #2405F2;
+}
+
+.keyword-filter a {
+  display: inline-block;
+  margin-right: 8px;
+
+  line-height: 30px;
+
+  font-size: 16px;
+}
+
+.keywords-item {
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+
+.case-study {
+  padding: 40px 20px 40px 20px;
+}
+
+.case-study__wrapper .work-cards__background-color {
+  margin-top: 20px;
+}
+
+.case-stadies__title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-transform: capitalize;
+
+  line-height: 32px;
+}
+
+.information-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+
+.information-title {
+  font-size: 18px;
+}
+
+.information-item {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.work-cards__item.keyword-ui-ux .work-cards__background-color {
+  background: linear-gradient(131.34deg, #FFD3AF 16.74%, #4F56FF 103.17%);
+}
+
+.work-cards__item.keyword-wireframing .work-cards__background-color {
+  background: linear-gradient(131.34deg, #EEBCA7 16.74%, #C8C8C8 103.17%);
+}
+
+.work-cards__item.keyword-branding .work-cards__background-color {
+  background: linear-gradient(131.34deg, #C2E7F2 16.74%, #98A4FF 103.17%);
+}
+
+.work-cards__item.keyword-development .work-cards__background-color {
+  background: linear-gradient(131.34deg, #C5BCFF 16.74%, #9BF7D5 103.17%);
+}
+
+.work-cards__item.keyword-webflow .work-cards__background-color {
+  background: linear-gradient(131.34deg, #D2D6FD 16.74%, #D6ACEA 103.17%);
+}
+
+.content {
+  display: none;
+}
+
+.content.active {
+  display: block;
+}
+
+.keyword-button {
+  text-transform: capitalize;
+}
+
+.keyword-button:hover {
+  color: #2405F2;
+}
+
+.active {
+  color: #2405F2;
+}
+
+
+@media (min-width: $tablet-width) {
+  .case-study {
+    padding: 40px 30px 40px 30px;
+  }
+
+  .case-stadies__title {
+    width: 43%;
+  }
+
+  .case-study__wrapper .work-cards__item {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  .article {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  .article-title {
+    padding-top: 40px;
+  }
+
+  .keywords {
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+
+  .keyword-filter a {
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .case-study {
+    padding-top: 60px;
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+
+  .case-stadies__title {
+    width: 52%;
+
+    padding-top: 42px;
+    padding-bottom: 42px;
+
+    line-height: 64px;
+  }
+
+  .case-study__wrapper .label {
+    font-size: 24px;
+  }
+
+  .case-study__wrapper .work-cards__item {
+    width: auto;
+  }
+
+  .case-study__wrapper .work-cards__item {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .case-study__wrapper .work-cards__background-color {
+    margin-top: 56px;
+    padding: 60px 88px;
+  }
+
+  .case-study__wrapper .work-cards__background-color img {
+    width: 100%;
+  }
+
+  .information-list {
+    justify-content: space-between;
+  }
+
+  .information-item {
+    padding-top: 58px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+
+  .information-item .label {
+    font-size: 16px;
+  }
+
+  .information-title {
+    font-size: 24px;
+  }
+
+  .article-title {
+    padding-top: 144px;
+    padding-bottom: 38px;
+  }
+
+  .article {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .article p {
+    padding-bottom: 20px;
+  }
+
+  .article-item {
+    font-size: 16px;
+  }
+
+  .article .work-cards__background-color {
+    margin-top: 72px;
+    padding: 40px;
+  }
+
+  .keywords {
+    margin-left: 220px;
+    margin-right: 140px;
+    margin-top: 60px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  .keywords-title {
+    padding-top: 0;
+    padding-right: 56px;
+
+    font-size: 24px;
+  }
+
+  .keyword-filter {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .keyword-filter a {
+    font-size: 18px;
+  }
+}
